@@ -15,7 +15,7 @@ const Header = () => {
          <div className='z-50'>
             <NavItems/>
          </div>
-         <div className='z-50  '>
+         <div className=' z-50'>
            <Toolbar/>
          </div>
       </div>

@@ -31,6 +31,7 @@ const config: Config = {
     },
   },
   plugins: [nextui(),
+    
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
