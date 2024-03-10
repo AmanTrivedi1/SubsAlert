@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ClerkProvider } from '@clerk/nextjs'
 import { Inter, Poppins } from "next/font/google";
 import "@/shared/styles/globals.css";
 import Providers from "@/shared/utils/Providers";
@@ -16,6 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en">
        <body className={poppins.className}>
         <Providers>
@@ -23,5 +25,6 @@ export default function RootLayout({
         </Providers>
        </body>
     </html>
+    </ClerkProvider>
   );
 }
