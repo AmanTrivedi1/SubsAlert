@@ -1,29 +1,27 @@
 "use client";
 
-import { useUser } from "@clerk/nextjs";
-
-import Image from "next/image";
+import { UserButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
-
+import { useClerk , useSignIn } from "@clerk/clerk-react";
+import { useRouter } from 'next/navigation'
+import { Button } from "@nextui-org/react";
 const Toolbar = () => {
-  const { user } = useUser();
 
+  const { user } = useUser();
+  const { signOut } = useClerk();
+  const router = useRouter()
   return (
     <div className="flex items-center flex-row-reverse gap-x-2">
       {user ? (
         <>
-          <Link href={"/dashboard"}>
-            <Image
-              src={user?.imageUrl}
-              alt=""
-              width={40}
-              height={40}
-              className="rounded-full"
-            />
-          </Link>
+            <Button className="bg-white px-4 md:text-sm text-xs text-black rounded-lg py-2" onClick={() => signOut(() => router.push("/"))}>
+              Sign out
+            </Button>
         </>
       ) : (
-        <Link href={"/sign-in"} className="bg-white text-black px-4 py-2 rounded-lg">Login now</Link>
+        <Button className="bg-white px-4 md:text-sm text-xs text-black rounded-lg py-2">
+          <Link href={"/sign-in"} className="">Login now</Link>
+        </Button>
       )}
     </div>
   );

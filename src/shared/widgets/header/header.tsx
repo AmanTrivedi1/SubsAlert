@@ -7,7 +7,7 @@ import Toolbar from './toolbar'
 const Header = () => {
   return (
     <>
-      <div className='w-full   top-0 left-0   h-[60px] '>
+      {/* <div className='w-full   top-0 left-0   h-[60px] '> */}
       <div className='flex items-center justify-between  py-2'>
         <div>
            <Logo/>
@@ -19,7 +19,7 @@ const Header = () => {
            <Toolbar/>
          </div>
       </div>
-      </div>
+      {/* </div> */}
   
       
     </>

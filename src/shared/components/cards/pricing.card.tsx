@@ -30,8 +30,8 @@ const PricingCard = ({ active }: { active: string }) => {
         >
           <path
             fill="#fff"
-            stroke="#FFAB90"
-            stroke-width="3"
+            stroke="#1d4ed8"
+            strokeWidth="3"
             d="M33.398 13.25a6.512 6.512 0 0 1 0 6.5l-4.887 8.487a6.512 6.512 0 0 1-5.643 3.263h-9.736a6.512 6.512 0 0 1-5.643-3.263L2.602 19.75a6.512 6.512 0 0 1 0-6.498l4.887-8.488A6.512 6.512 0 0 1 13.132 1.5h9.736a6.512 6.512 0 0 1 5.643 3.263l4.887 8.488Z"
           ></path>
         </svg>
@@ -55,9 +55,10 @@ const PricingCard = ({ active }: { active: string }) => {
           </div>
         ))}
         <br />
-        <button  className="w-full text-lg bg-black px-2 py-2 rounded-lg text-white">
+        <Button 
+        className="w-full bg-blue-700 text-lg  px-2 py-2 rounded-lg text-white">
           Start Free
-        </button>
+        </Button>
         <p className="pt-1 opacity-[.7] text-center">
           30-day free trial of Scale features, then free forever
         </p>
@@ -74,8 +75,8 @@ const PricingCard = ({ active }: { active: string }) => {
         >
           <path
             fill="#fff"
-            stroke="#FFAB90"
-            stroke-width="3"
+            stroke="#1d4ed8"
+            strokeWidth="3"
             d="M33.398 13.25a6.512 6.512 0 0 1 0 6.5l-4.887 8.487a6.512 6.512 0 0 1-5.643 3.263h-9.736a6.512 6.512 0 0 1-5.643-3.263L2.602 19.75a6.512 6.512 0 0 1 0-6.498l4.887-8.488A6.512 6.512 0 0 1 13.132 1.5h9.736a6.512 6.512 0 0 1 5.643 3.263l4.887 8.488Z"
           ></path>
         </svg>
@@ -95,13 +96,13 @@ const PricingCard = ({ active }: { active: string }) => {
         {GrowPlan.map((i: PlanType, index: number) => (
           <div key={index} className="flex w-full items-center py-2">
             <span className="text-xl">{ICONS.right}</span>
-            <p className="pl-2 text-base">{i.title}</p>
+             <p className="pl-2 text-base">{i.title}</p>
           </div>
         ))}
         <br />
-        <button
-          color="primary"
-          className="w-full text-lg bg-[#FFAB90] p-2 rounded-lg text-white"
+        <Button
+
+          className="w-full text-white bg-blue-700 text-lg  p-2 rounded-lg "
         //   onClick={() =>
         //     handleSubscription({
         //       price:
@@ -112,7 +113,7 @@ const PricingCard = ({ active }: { active: string }) => {
         //   }
         >
           Start Grow
-        </button>
+        </Button>
         <p className="pt-1 opacity-[.7] text-center">
           30-day free trial of Scale features, then $
           {active === "Monthly" ? "42" : "49"}/mo
@@ -130,8 +131,8 @@ const PricingCard = ({ active }: { active: string }) => {
         >
           <path
             fill="#fff"
-            stroke="#FFAB90"
-            stroke-width="3"
+            stroke="#1d4ed8"
+            strokeWidth="3"
             d="M33.398 13.25a6.512 6.512 0 0 1 0 6.5l-4.887 8.487a6.512 6.512 0 0 1-5.643 3.263h-9.736a6.512 6.512 0 0 1-5.643-3.263L2.602 19.75a6.512 6.512 0 0 1 0-6.498l4.887-8.488A6.512 6.512 0 0 1 13.132 1.5h9.736a6.512 6.512 0 0 1 5.643 3.263l4.887 8.488Z"
           ></path>
         </svg>
@@ -155,8 +156,8 @@ const PricingCard = ({ active }: { active: string }) => {
           </div>
         ))}
         <br />
-        <button
-          className="w-full text-lg bg-[#FFAB90] px-2 py-2 rounded-lg text-white"
+        <Button
+          className="w-full text-lg bg-blue-700  px-2 py-2 rounded-lg text-white"
         //   onClick={() =>
         //     handleSubscription({
         //       price:
@@ -167,7 +168,7 @@ const PricingCard = ({ active }: { active: string }) => {
         //   }
         >
           Start Scale
-        </button>
+        </Button>
         <p className="pt-1 opacity-[.7] text-center">
           30-day free trial of Scale features, then $
           {active === "Monthly" ? "99" : "84"}/mo

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import RotatingChakrs from "../../../assets/RotatingChakra.svg"
 import React from 'react'
+import { Button } from '@nextui-org/react'
 
 const Banner = () => {
   return (
@@ -11,8 +12,8 @@ const Banner = () => {
              <p className='text-zinc-300 z-50 text-center'>We are made a tool that you can attach in your website which help you to know how many subscriber your webapp have we work ina two way you can directly user our dashboard or you can work wiht the api that we are offering.</p>
          </div>
          <div className='flex items-center gap-x-4'>
-            <button className='bg-white text-xs z-50 text-black px-8 py-3 rounded-lg  md:text-base'>Browse Features</button>
-            <button className=' text-white z-50 border text-xs border-white  px-8 py-[11px] rounded-lg md:text-base'>Custom Features</button>
+            <Button className='bg-white text-xs z-50 text-black px-8 py-3 rounded-lg  md:text-base'>Browse Features</Button>
+            <Button className=' bg-transparent text-white border border-white z-50  text-xs  px-8 py-[11px] rounded-lg md:text-base'>Custom Features</Button>
          </div>
          <div className='mt-2'>
          </div>

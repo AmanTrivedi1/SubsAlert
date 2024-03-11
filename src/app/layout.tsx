@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from '@clerk/nextjs'
+import { dark } from '@clerk/themes';
 import { Inter, Poppins } from "next/font/google";
 import "@/shared/styles/globals.css";
 import Providers from "@/shared/utils/Providers";
@@ -17,7 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider appearance={{
+      baseTheme: dark
+    }}>
     <html lang="en">
        <body className={poppins.className}>
         <Providers>
