@@ -6,7 +6,7 @@ import { Button } from '@nextui-org/react'
 const Banner = () => {
   return (
     <>
-   <div className='text-white p-2 flex max-w-6xl gap-y-4 m-auto items-center justify-center flex-col  pt-32'>
+   <div className='text-white  p-2 flex max-w-6xl gap-y-4 m-auto items-center justify-center flex-col  pt-32'>
          <div className='flex flex-col items-center gap-y-4'>
              <h1 className='md:text-5xl text-3xl font-bold z-50  text-center '>Stay informed with our alert tool that let you informed every subscriber that you get on your blog or any webapp</h1>
              <p className='text-zinc-300 z-50 text-center'>We are made a tool that you can attach in your website which help you to know how many subscriber your webapp have we work ina two way you can directly user our dashboard or you can work wiht the api that we are offering.</p>

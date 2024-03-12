@@ -7,19 +7,16 @@ import { useState } from "react";
 const Pricing = () => {
   const [active, setActive] = useState("Monthly");
   return (
-    <div className=" max-w-6xl m-auto p-2 ">
-      <h1 className="md:text-4xl lg:text-5xl text-3xl text-white mt-2  mb-1" >PRICING</h1>
-      <div className="w-[100%] m-auto py-2">
+    <div className=" max-w-6xl m-auto p-2  ">
         <div className="w-full mb-4 md:flex justify-between">
-          <div className="flex items-center mt-2 md:mt-0">
+          <div className="flex items-center  mt-2 md:mt-0">
             <Button
               className={`${
                 active === "Monthly"
                   ? "bg-blue-700 text-white"
                   : "bg-white/10 text-white"
               } rounded-r-[0] !p-4 md:text-lg text-xs !px-4 border border-[#000]`}
-              onClick={() => setActive("Monthly")}
-            >
+              onClick={() => setActive("Monthly")} >
               Monthly
             </Button>
             <Button
@@ -34,7 +31,7 @@ const Pricing = () => {
           </div>
         </div>
         <PricingCard active={active} />
-      </div>
+     
     </div>
   );
 };

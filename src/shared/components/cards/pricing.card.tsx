@@ -18,9 +18,9 @@ const PricingCard = ({ active }: { active: string }) => {
 //   };
 
   return (
-    <div className="w-full text-white md:flex items-start justify-between gap-5 py-2">
+    <div className=" flex gap-x-4  md:flex-row flex-col ">
       {/* free plan */}
-      <div className="md:w-[400px] bg-white/10 z-50 rounded p-5  md:my-0">
+      <div className=" bg-white/10 z-50 rounded p-5  md:my-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -60,12 +60,12 @@ const PricingCard = ({ active }: { active: string }) => {
           Start Free
         </Button>
         <p className="pt-1 opacity-[.7] text-center">
-          30-day free trial of Scale features
+          30-day free trial of Scale features than you pay
         </p>
       </div>
 
       {/* grow plan */}
-      <div className="md:w-[400px] z-50 bg-white/10 rounded p-5 my-5 md:my-0">
+      <div className=" z-50 bg-white/10 rounded p-5 my-5 md:my-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -121,7 +121,7 @@ const PricingCard = ({ active }: { active: string }) => {
       </div>
 
       {/* scale plan */}
-      <div className="md:w-[400px] bg-white/10   hover:cursor-pointer rounded p-5 my-5 md:my-0">
+      <div className=" bg-white/10   hover:cursor-pointer rounded p-5 my-5 md:my-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
