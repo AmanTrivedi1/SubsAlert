@@ -12,8 +12,8 @@ const DashboardSidebar = () => {
     <>
     
 
-    <div className="h-full w-full   bg-grid-small-white/[0.2]  relative ">
-      <div className=" pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+    <div className="h-full w-full  bg-grid-small-white/[0.2]   ">
+      <div className=" pointer-events-none inset-0  bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="p-2 text-white flex items-center rounded ">
            <UserButton/>
            <h5 className="pl-2 pt-1 capitalize  line-clamp-1 "> {user?.username}/Newsletter</h5>

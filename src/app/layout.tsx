@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from '@clerk/nextjs'
 import { dark } from '@clerk/themes';
-import { Inter, Poppins } from "next/font/google";
+import { Hind, Inter} from "next/font/google";
 import "@/shared/styles/globals.css";
 import Providers from "@/shared/utils/Providers";
 
-const poppins = Poppins({ subsets: ["latin"], weight:["300" , "400" , "500" , "600" , "700"] });
+const hind = Inter({ subsets: ["latin"], weight:["300" , "400" , "500" , "600" , "700"] });
 
 export const metadata: Metadata = {
   title: "SubsAlert",
@@ -22,7 +22,7 @@ export default function RootLayout({
       baseTheme: dark
     }}>
     <html lang="en">
-       <body className={poppins.className}>
+       <body className={hind.className}>
         <Providers>
             {children}
         </Providers>

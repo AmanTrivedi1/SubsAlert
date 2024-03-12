@@ -1,6 +1,13 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* *{
+  font-family: "Hind ";
+} */
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -58,4 +65,16 @@ body {
 }
 .jswdLm .blockbuilder-branding{
   display: none!important;
+}
+
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+
+  .no-scrollbar {
+      -ms-overflow-style: none;  
+      scrollbar-width: none;  
+}
 }

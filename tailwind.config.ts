@@ -23,6 +23,17 @@ const config: Config = {
       clashDisplay: ["var(--font-clashDisplay)"],
     },
     extend: {
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -30,8 +41,9 @@ const config: Config = {
       },
     },
   },
-  plugins: [nextui(),
-    
+  plugins: [
+    addVariablesForColors,
+    nextui(),
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
@@ -55,6 +67,7 @@ const config: Config = {
       );
     },
   ],
+
 };
 
 function addVariablesForColors({ addBase, theme }: any) {

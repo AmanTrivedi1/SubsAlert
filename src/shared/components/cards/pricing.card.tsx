@@ -18,9 +18,9 @@ const PricingCard = ({ active }: { active: string }) => {
 //   };
 
   return (
-    <div className="w-full md:flex items-start flex-wrap justify-around gap-5 py-2">
+    <div className="w-full text-white md:flex items-start justify-between gap-5 py-2">
       {/* free plan */}
-      <div className="md:w-[400px] bg-white z-50 rounded p-5  md:my-0">
+      <div className="md:w-[400px] bg-white/10 z-50 rounded p-5  md:my-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -29,17 +29,17 @@ const PricingCard = ({ active }: { active: string }) => {
           className="mb-4"
         >
           <path
-            fill="#fff"
+            fill=""
             stroke="#1d4ed8"
             strokeWidth="3"
             d="M33.398 13.25a6.512 6.512 0 0 1 0 6.5l-4.887 8.487a6.512 6.512 0 0 1-5.643 3.263h-9.736a6.512 6.512 0 0 1-5.643-3.263L2.602 19.75a6.512 6.512 0 0 1 0-6.498l4.887-8.488A6.512 6.512 0 0 1 13.132 1.5h9.736a6.512 6.512 0 0 1 5.643 3.263l4.887 8.488Z"
           ></path>
         </svg>
-        <h5 className="font-clashDisplay uppercase text-cyber-ink text-2xl  border-b border-[#000]">
+        <h5 className="font-clashDisplay uppercase text-cyber-ink text-2xl  border-b border-white">
           Launch
         </h5>
         <br />
-        <div className="border-b pb-2 border-[#000]">
+        <div className="border-b pb-2 border-white">
           <h5 className="font-clashDisplay uppercase text-cyber-ink text-2xl">
             $0
           </h5>
@@ -60,12 +60,12 @@ const PricingCard = ({ active }: { active: string }) => {
           Start Free
         </Button>
         <p className="pt-1 opacity-[.7] text-center">
-          30-day free trial of Scale features, then free forever
+          30-day free trial of Scale features
         </p>
       </div>
 
       {/* grow plan */}
-      <div className="md:w-[400px] z-50 bg-white rounded p-5 my-5 md:my-0">
+      <div className="md:w-[400px] z-50 bg-white/10 rounded p-5 my-5 md:my-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -74,17 +74,17 @@ const PricingCard = ({ active }: { active: string }) => {
           className="mb-4"
         >
           <path
-            fill="#fff"
+            fill="bg-white/10"
             stroke="#1d4ed8"
             strokeWidth="3"
             d="M33.398 13.25a6.512 6.512 0 0 1 0 6.5l-4.887 8.487a6.512 6.512 0 0 1-5.643 3.263h-9.736a6.512 6.512 0 0 1-5.643-3.263L2.602 19.75a6.512 6.512 0 0 1 0-6.498l4.887-8.488A6.512 6.512 0 0 1 13.132 1.5h9.736a6.512 6.512 0 0 1 5.643 3.263l4.887 8.488Z"
           ></path>
         </svg>
-        <h5 className="font-clashDisplay uppercase text-cyber-ink text-2xl  border-b border-[#000]">
+        <h5 className="font-clashDisplay uppercase text-cyber-ink text-2xl  border-b border-white">
           GROW
         </h5>
         <br />
-        <div className="border-b pb-2 border-black">
+        <div className="border-b pb-2 border-white">
           <h5 className="font-clashDisplay uppercase text-cyber-ink text-2xl">
             ${active === "Monthly" ? "49" : "42"} /month
           </h5>
@@ -121,7 +121,7 @@ const PricingCard = ({ active }: { active: string }) => {
       </div>
 
       {/* scale plan */}
-      <div className="md:w-[400px] bg-white z-50 rounded p-5 my-5 md:my-0">
+      <div className="md:w-[400px] bg-white/10   hover:cursor-pointer rounded p-5 my-5 md:my-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="36"
@@ -130,17 +130,17 @@ const PricingCard = ({ active }: { active: string }) => {
           className="mb-4"
         >
           <path
-            fill="#fff"
+            
             stroke="#1d4ed8"
             strokeWidth="3"
             d="M33.398 13.25a6.512 6.512 0 0 1 0 6.5l-4.887 8.487a6.512 6.512 0 0 1-5.643 3.263h-9.736a6.512 6.512 0 0 1-5.643-3.263L2.602 19.75a6.512 6.512 0 0 1 0-6.498l4.887-8.488A6.512 6.512 0 0 1 13.132 1.5h9.736a6.512 6.512 0 0 1 5.643 3.263l4.887 8.488Z"
           ></path>
         </svg>
-        <h5 className="font-clashDisplay uppercase text-cyber-ink text-3xl  border-b border-[#000]">
+        <h5 className="font-clashDisplay uppercase text-cyber-ink text-3xl  border-b border-white">
           SCALE
         </h5>
         <br />
-        <div className="border-b pb-2 border-[#000]">
+        <div className="border-b pb-2 border-white">
           <h5 className="font-clashDisplay uppercase text-cyber-ink text-2xl">
             ${active === "Monthly" ? "99" : "84"} /month
           </h5>
