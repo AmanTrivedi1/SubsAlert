@@ -12,17 +12,17 @@ const DashboardSidebar = () => {
     <>
     
 
-    <div className="h-full w-full  bg-grid-small-white/[0.2]   ">
-      <div className=" pointer-events-none inset-0  bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <div className="p-2 text-white flex items-center rounded ">
-           <UserButton/>
-           <h5 className="pl-2 pt-1 capitalize  line-clamp-1 "> {user?.username}/Newsletter</h5>
-        </div>
-        <div className="">
-            <DashboardItems/>
-            <UserPlan/>
-            <DashboardItems bottomContent={true}/>
-        </div>
+    <div className="p-2">
+      <div className="p-2 flex items-center text-white  rounded">
+        {/* <span className="text-2xl">{ICONS.home}</span> */}
+        <UserButton/>
+        <h5 className="pl-2 pt-1 capitalize line-clamp-1">{user?.username} Newsletter</h5>
+      </div>
+      <div>
+        <DashboardItems />
+        <UserPlan />
+        <DashboardItems bottomContent={true} />
+      </div>
     </div>
 
     </>

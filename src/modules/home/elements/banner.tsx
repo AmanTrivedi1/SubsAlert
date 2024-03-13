@@ -2,6 +2,7 @@ import Image from 'next/image'
 import RotatingChakrs from "../../../assets/RotatingChakra.svg"
 import React from 'react'
 import { Button } from '@nextui-org/react'
+import { AnimatedTooltipPreview } from './UserTooltip'
 
 const Banner = () => {
   return (
@@ -16,6 +17,7 @@ const Banner = () => {
             <Button className=' bg-transparent text-white border border-white z-50  text-xs  px-8 py-[11px] rounded-lg md:text-base'>Custom Features</Button>
          </div>
          <div className='mt-2'>
+           <AnimatedTooltipPreview/>
          </div>
            <Image className='absolute  md:top-20 top-28 spin-slow hover:animate-spin cursor-pointer md:left-1/4 left-4 ' src={RotatingChakrs} width={50} height={100} alt="image"/>            
     </div>

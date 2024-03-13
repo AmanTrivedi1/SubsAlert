@@ -7,7 +7,7 @@ import { useState } from "react";
 const Pricing = () => {
   const [active, setActive] = useState("Monthly");
   return (
-    <div className=" max-w-6xl m-auto p-2  ">
+    <div className=" max-w-6xl m-auto p-2  text-white/90 ">
         <div className="w-full mb-4 md:flex justify-between">
           <div className="flex items-center  mt-2 md:mt-0">
             <Button
